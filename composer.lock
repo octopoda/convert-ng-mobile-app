@@ -3,49 +3,8 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c3b91ce6b920bd93cec7f00c5627de9d",
+    "hash": "df0ce3ac3aa843f2c16a713d491f64ab",
     "packages": [
-        {
-            "name": "caouecs/gumby2",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/caouecs/Laravel4-Gumby2.git",
-                "reference": "9b5131130a34234c23d01a191d12ca68a515232f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/caouecs/Laravel4-Gumby2/zipball/9b5131130a34234c23d01a191d12ca68a515232f",
-                "reference": "9b5131130a34234c23d01a191d12ca68a515232f",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "4.0.x",
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Caouecs\\Gumby2": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "caouecs",
-                    "email": "caouecs@caouecs.net"
-                }
-            ],
-            "description": "Gumby2 Framework in Laravel 4",
-            "keywords": [
-                "gumby2",
-                "laravel"
-            ],
-            "time": "2013-06-17 07:55:20"
-        },
         {
             "name": "classpreloader/classpreloader",
             "version": "dev-master",
@@ -2574,8 +2533,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "way/generators": 20,
-        "caouecs/gumby2": 20
+        "way/generators": 20
     },
     "platform": [
 
