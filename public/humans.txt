@@ -1,0 +1,17 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Creator : Zack Davis - Octopoda Interactive
+  Site: Octopodainteractive.com
+  Twitter:
+  Location: Dallas Texas
+
+/* THANKS */
+  Names (& URL): Angualarjs.org
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery,  Anuglar
+  Software:

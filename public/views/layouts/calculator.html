@@ -1,0 +1,31 @@
+<article class="calculator">
+  <form name="calculator" ng-submit="convert();">
+    <ul>
+      <li class="field">
+        <h3>Grocery Purchase</h3>
+        <input type="text" class="text normal input first" placeholder="amount" ng-model="grocery.amount">
+        <div class="picker">
+          <select class="normal" ng-model="grocery.unit" ng-options="c.name group by c.type for c in convertData"></select>
+        </div>
+
+       </li>
+       <li class="field">
+         <input type="text" class="xxwide text input cost-input" placeholder="cost" ng-model="grocery.cost" >
+       </li>
+       
+       <li class="field gap">
+        <h3>Recipe Amount</h3>
+        <input type="text" class="text normal input first" placeholder="amount" ng-model="food.amount">
+        <div class="picker">
+          <select class="normal" ng-options="c.name group by c.type for c in convertData" ng-model="food.unit"></select>
+        </div>
+      </li> 
+      
+      <li class="field">
+        <div class="medium btn primary across"><button type="submit">Convert Me!</button></div>
+      </li>
+
+    </ul>
+  </form>
+  <h4>Final Cost: <span class="pull-right">${{ recipeCost | number:2 }}</span></h4>
+</article>

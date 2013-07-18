@@ -1,0 +1,58 @@
+.angular {margin-top:0.5em;}
+.across {width:100%;}
+.row {min-width:320px;}
+body {overflow:hidden;}
+.flash {cursor:pointer;}
+.copyright {font-size:9px; text-align:center; width:100%; position:fixed; bottom:-15px; @include background-opacity($green-blue, 0.5);}
+
+body {
+	overflow:hidden;
+	background-color: $green;
+	@include filter-gradient($green, lighten($green, 10%), horizontal); // IE6-8 fallback on horizontal gradient
+	$experimental-support-for-svg: true;
+	@include background-image(radial-gradient(center, ellipse cover,  lighten($green, 10%) 0%,$green 100%));
+}
+
+
+.animate-enter, .animate-leave {
+	position: absolute;
+    @include transition(left ease-out 500ms)
+}
+
+
+
+.calculator {min-width:280px; 
+	&.animate-enter {
+		left:-140%;
+		&.animate-enter-active {
+			left:0;
+		}
+	}
+
+	&.animate-leave {
+		left:0;
+		&.animate-leave-active {
+			left:-140%;
+		}
+	}
+}
+
+
+.recipeList {min-width:280px;
+	&.animate-enter {
+		left:140%;
+		&.animate-enter-active {
+			left:0;
+		}
+	}
+
+	&.animate-leave {
+		left:0;
+		&.animate-leave-active {
+			left:140%;
+		}
+	}
+}
+
+
+

@@ -1,0 +1,9 @@
+<article class="recipeList">
+    <h3>Your Recipe</h3>
+    <ul>
+      <li ng-repeat="item in itemsCost"> Item {{$index+1}} <span class="pull-right">${{ item | number:2 }}</span></li>
+    </ul>
+    <hr>
+    <h4>Final Cost: <span class="pull-right">${{ recipeCost | number:2 }}</span></h4>
+    <div class="btn danger medium across"><button ng-click="clear()">Clear</button></div>
+</article>
